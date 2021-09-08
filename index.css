@@ -1,0 +1,148 @@
+:root {
+    --navy: #182f59;
+}
+
+.text-navy {
+    color: var(--navy);
+}
+
+.bg-navy {
+    background-color: var(--navy);
+}
+
+.btn-navy {
+    background-color: var(--navy);
+    color: white;
+}
+
+.btn-navy:hover {
+    border: 1px solid white;
+    color: white;
+}
+
+.text-green {
+    color: #5bbc2e;
+}
+
+.fs-14p {
+    font-size: 14px;
+}
+
+.fs-7 {
+    font-size: 0.8rem !important;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: var(--navy);
+}
+
+.navbar-nav .nav-link {
+    color: var(--navy) !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .active {
+    border-bottom: 2px solid var(--navy);
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000000 !important;
+}
+
+.banner-1 .banner-bg {
+    /* padding: 4rem 1rem; */
+    color: white;
+    background-image: url(./img/banner-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-gray {
+    background-color: gainsboro;
+}
+
+.accordion-button:focus,
+.form-select:focus,
+.form-control:focus,
+.btn:focus {
+    border-color: black;
+    outline: 0;
+    box-shadow: none;
+    background-color: white;
+    color: black;
+}
+
+.accordion-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion-header {
+    border-bottom: 2px solid gray;
+}
+
+.accordion-body a {
+    text-decoration: none;
+    color: var(--navy);
+    padding: 5px 0;
+}
+
+.banner-1 .menu-link {
+    padding: 5px;
+    background-color: white;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+.dropdown-menu .dropdown-item:active {
+    background-color: var(--navy);
+}
+
+.dropdown-menu li:hover {
+    border-left: 4px solid rgb(130, 190, 40);
+}
+
+.container-heading {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.container-heading::before {
+    display: inline-block;
+    content: '';
+    background-color: var(--navy);
+    width: 100%;
+    height: 3px;
+}
+
+.case-studies-container .info-area span,
+.blogs-container .info-area span {
+    font-size: 10px;
+}
+
+.get-updates {
+    position: relative;
+}
+
+.get-updates input {
+    border-bottom: 4px solid gray;
+    border-radius: 10px;
+    padding: 0.75rem;
+}
+
+.get-updates label {
+    padding: 0 10px;
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+}

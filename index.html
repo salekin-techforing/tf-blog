@@ -7,148 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="index.css">
     <title>Home</title>
 </head>
-<style>
-     :root {
-        --navy: #182f59;
-    }
-    
-    .text-navy {
-        color: var(--navy);
-    }
-    
-    .bg-navy {
-        background-color: var(--navy);
-    }
-    
-    .btn-navy {
-        background-color: var(--navy);
-        color: white;
-    }
-    
-    .btn-navy:hover {
-        border: 1px solid white;
-        color: white;
-    }
-    
-    .text-green {
-        color: #5bbc2e;
-    }
-    
-    .fs-14p {
-        font-size: 14px;
-    }
-    
-    .fs-7 {
-        font-size: 0.8rem !important;
-    }
-    
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    
-    a:hover {
-        color: var(--navy);
-    }
-    
-    .banner-1 .banner-bg {
-        /* padding: 4rem 1rem; */
-        color: white;
-        background-image: url(./img/banner-1.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    .bg-gray {
-        background-color: gainsboro;
-    }
-    
-    .accordion-button:focus,
-    .form-select:focus,
-    .form-control:focus,
-    .btn:focus {
-        border-color: black;
-        outline: 0;
-        box-shadow: none;
-        background-color: white;
-        color: black;
-    }
-    
-    .accordion-body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .accordion-header {
-        border-bottom: 2px solid gray;
-    }
-    
-    .accordion-body a {
-        text-decoration: none;
-        color: var(--navy);
-        padding: 5px 0;
-    }
-    
-    .banner-1 .menu-link {
-        padding: 5px;
-        background-color: white;
-        text-align: center;
-        display: block;
-        margin-top: 10px;
-    }
-    
-    .dropdown-menu .dropdown-item:active {
-        background-color: var(--navy);
-    }
-    
-    .dropdown-menu li:hover {
-        border-left: 4px solid rgb(130, 190, 40);
-    }
-    
-    .container-heading {
-        font-weight: bold;
-        display: inline-block;
-        margin-bottom: 15px;
-    }
-    
-    .container-heading::before {
-        display: inline-block;
-        content: '';
-        background-color: var(--navy);
-        width: 100%;
-        height: 3px;
-    }
-    
-    .case-studies-container .info-area span,
-    .blogs-container .info-area span {
-        font-size: 10px;
-    }
-    
-    .get-updates {
-        position: relative;
-    }
-    
-    .get-updates input {
-        border-bottom: 4px solid gray;
-        border-radius: 10px;
-        padding: 0.75rem;
-    }
-    
-    .get-updates label {
-        padding: 0 10px;
-        position: absolute;
-        top: 0.75rem;
-        right: 1rem;
-    }
-</style>
 
 <body>
-
+    <!-- Header Start -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.png" width="125" height="60" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blogs.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="case_studies.html">Case Study</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <main class="container-xl">
         <section class="row mx-0 banner-1">
             <div class="col-md-9 pe-2 banner-bg">
