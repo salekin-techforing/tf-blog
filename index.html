@@ -112,18 +112,38 @@
     
     .container-heading {
         font-weight: bold;
+        display: inline-block;
+        margin-bottom: 15px;
     }
     
-    .container-heading::after {
+    .container-heading::before {
         display: inline-block;
         content: '';
-        background-color: black;
+        background-color: var(--navy);
         width: 100%;
-        height: 4px;
+        height: 3px;
     }
     
-    .case-studies-container .info-area .btn {
+    .case-studies-container .info-area span,
+    .blogs-container .info-area span {
         font-size: 10px;
+    }
+    
+    .get-updates {
+        position: relative;
+    }
+    
+    .get-updates input {
+        border-bottom: 4px solid gray;
+        border-radius: 10px;
+        padding: 0.75rem;
+    }
+    
+    .get-updates label {
+        padding: 0 10px;
+        position: absolute;
+        top: 0.75rem;
+        right: 1rem;
     }
 </style>
 
@@ -190,23 +210,23 @@
         </div>
 
         <section class="case-studies-container mt-4">
-            <h5 class="container-heading">CASE STUDIES</h5>
+            <a href="" class="container-heading">CASE STUDIES</a>
             <div class="row mx-0">
                 <div class="col-md-6 ps-0">
                     <div>
                         <img src="./img/classified_vulnerability.png" class="img-fluid" alt="">
                     </div>
                     <div class="d-flex flex-column py-2">
-                        <h6 class="fw-bold">CLASSIFIED VULNERABILITY ASSESSMENT CASE STUDY- 4 STEPS PROCESS OF MITIGATING RISK</h6>
+                        <a href="" class="fw-bold">CLASSIFIED VULNERABILITY ASSESSMENT CASE STUDY- 4 STEPS PROCESS OF MITIGATING RISK</a>
                         <div>
-                            <button class="btn p-0 me-5 text-green">
+                            <span class="p-0 me-5 text-green">
                                 <i class="bi bi-calendar"></i>
                                 11 December, 2020
-                            </button>
-                            <button class="btn p-0 me-5 text-green">
+                            </span>
+                            <span class="p-0 me-5 text-green">
                                 <i class="bi bi-chat-fill"></i>
                                 21 Comment
-                            </button>
+                            </span>
                             <button class="btn p-0 text-green"><i class="bi bi-share-fill"></i></button>
                         </div>
                         <p class="mt-2">Website security is a major concern across all business domains. A leak in security could tarnish the image of any business entity considerably. Website credibility depends on its security and robustness against attempted hacking.
@@ -222,14 +242,14 @@
                             <div class="">
                                 <a href="" class="fw-bold fs-7">HOW HACKERS ARE USING SOCIAL ENGINEERING TO HACK YOU DURING COVID- 19 PANDEMIC?</a>
                                 <div class="info-area">
-                                    <button class="btn p-0 me-3 text-green">
+                                    <span class="p-0 me-3 text-green">
                                             <i class="bi bi-calendar"></i>
                                             11 December, 2020
-                                        </button>
-                                    <button class="btn p-0 me-3 text-green">
+                                    </span>
+                                    <span class="p-0 me-3 text-green">
                                             <i class="bi bi-chat-fill"></i>
                                             21 Comment
-                                        </button>
+                                        </span>
                                     <button class="btn p-0 text-green"><i class="bi bi-share-fill"></i></button>
                                 </div>
                                 <p class="mt-2 mb-0 fs-7">Social engineering is a type of attack used to access organizations, frameworks, networks, or actual areas, or for monetary benefit by utilizing human....
@@ -246,14 +266,14 @@
                             <div class="">
                                 <a href="" class="fw-bold fs-7">HOW HACKERS ARE USING SOCIAL ENGINEERING TO HACK YOU DURING COVID- 19 PANDEMIC?</a>
                                 <div class="info-area">
-                                    <button class="btn p-0 me-3 text-green">
+                                    <span class="p-0 me-3 text-green">
                                             <i class="bi bi-calendar"></i>
                                             11 December, 2020
-                                        </button>
-                                    <button class="btn p-0 me-3 text-green">
+                                        </span>
+                                    <span class="p-0 me-3 text-green">
                                             <i class="bi bi-chat-fill"></i>
                                             21 Comment
-                                        </button>
+                                        </span>
                                     <button class="btn p-0 text-green"><i class="bi bi-share-fill"></i></button>
                                 </div>
                                 <p class="mt-2 mb-0 fs-7">Social engineering is a type of attack used to access organizations, frameworks, networks, or actual areas, or for monetary benefit by utilizing human....
@@ -269,14 +289,14 @@
                             <div class="">
                                 <a href="" class="fw-bold fs-7">HOW HACKERS ARE USING SOCIAL ENGINEERING TO HACK YOU DURING COVID- 19 PANDEMIC?</a>
                                 <div class="info-area">
-                                    <button class="btn p-0 me-3 text-green">
+                                    <span class="p-0 me-3 text-green">
                                             <i class="bi bi-calendar"></i>
                                             11 December, 2020
-                                        </button>
-                                    <button class="btn p-0 me-3 text-green">
+                                        </span>
+                                    <span class="p-0 me-3 text-green">
                                             <i class="bi bi-chat-fill"></i>
                                             21 Comment
-                                        </button>
+                                        </span>
                                     <button class="btn p-0 text-green"><i class="bi bi-share-fill"></i></button>
                                 </div>
                                 <p class="mt-2 mb-0 fs-7">Social engineering is a type of attack used to access organizations, frameworks, networks, or actual areas, or for monetary benefit by utilizing human....
@@ -291,23 +311,23 @@
         </section>
         <!-- blogs container  -->
         <section class="blogs-container mt-3">
-            <h5 class="container-heading">BLOGS</h5>
+            <a href="" class="container-heading">BLOGS</a>
             <div class="row mx-0">
                 <div class="col-md-6 ps-0">
                     <div>
                         <img src="./img/blog-1.png" class="img-fluid" alt="">
                     </div>
                     <div class="d-flex flex-column py-2">
-                        <h6 class="fw-bold">CLASSIFIED VULNERABILITY ASSESSMENT CASE STUDY- 4 STEPS PROCESS OF MITIGATING RISK</h6>
+                        <a href="" class="fw-bold">CLASSIFIED VULNERABILITY ASSESSMENT CASE STUDY- 4 STEPS PROCESS OF MITIGATING RISK</a>
                         <div>
-                            <button class="btn p-0 me-5 text-green">
+                            <span class="p-0 me-5 text-green">
                                 <i class="bi bi-calendar"></i>
                                 11 December, 2020
-                            </button>
-                            <button class="btn p-0 me-5 text-green">
+                            </span>
+                            <span class="p-0 me-5 text-green">
                                 <i class="bi bi-chat-fill"></i>
                                 21 Comment
-                            </button>
+                            </span>
                             <button class="btn p-0 text-green"><i class="bi bi-share-fill"></i></button>
                         </div>
                         <p class="mt-2">Website security is a major concern across all business domains. A leak in security could tarnish the image of any business entity considerably. Website credibility depends on its security and robustness against attempted hacking.
@@ -323,14 +343,14 @@
                             <div class="">
                                 <a href="" class="fw-bold fs-7">HOW HACKERS ARE USING SOCIAL ENGINEERING TO HACK YOU DURING COVID- 19 PANDEMIC?</a>
                                 <div class="info-area">
-                                    <button class="btn p-0 me-3 text-green">
+                                    <span class="p-0 me-3 text-green">
                                             <i class="bi bi-calendar"></i>
                                             11 December, 2020
-                                        </button>
-                                    <button class="btn p-0 me-3 text-green">
+                                        </span>
+                                    <span class="p-0 me-3 text-green">
                                             <i class="bi bi-chat-fill"></i>
                                             21 Comment
-                                        </button>
+                                        </span>
                                     <button class="btn p-0 text-green"><i class="bi bi-share-fill"></i></button>
                                 </div>
                                 <p class="mt-2 mb-0 fs-7">Social engineering is a type of attack used to access organizations, frameworks, networks, or actual areas, or for monetary benefit by utilizing human....
@@ -347,14 +367,14 @@
                             <div class="">
                                 <a href="" class="fw-bold fs-7">HOW HACKERS ARE USING SOCIAL ENGINEERING TO HACK YOU DURING COVID- 19 PANDEMIC?</a>
                                 <div class="info-area">
-                                    <button class="btn p-0 me-3 text-green">
+                                    <span class="p-0 me-3 text-green">
                                             <i class="bi bi-calendar"></i>
                                             11 December, 2020
-                                        </button>
-                                    <button class="btn p-0 me-3 text-green">
+                                        </span>
+                                    <span class="p-0 me-3 text-green">
                                             <i class="bi bi-chat-fill"></i>
                                             21 Comment
-                                        </button>
+                                        </span>
                                     <button class="btn p-0 text-green"><i class="bi bi-share-fill"></i></button>
                                 </div>
                                 <p class="mt-2 mb-0 fs-7">Social engineering is a type of attack used to access organizations, frameworks, networks, or actual areas, or for monetary benefit by utilizing human....
@@ -370,14 +390,14 @@
                             <div class="">
                                 <a href="" class="fw-bold fs-7">HOW HACKERS ARE USING SOCIAL ENGINEERING TO HACK YOU DURING COVID- 19 PANDEMIC?</a>
                                 <div class="info-area">
-                                    <button class="btn p-0 me-3 text-green">
+                                    <span class="p-0 me-3 text-green">
                                             <i class="bi bi-calendar"></i>
                                             11 December, 2020
-                                        </button>
-                                    <button class="btn p-0 me-3 text-green">
+                                        </span>
+                                    <span class="p-0 me-3 text-green">
                                             <i class="bi bi-chat-fill"></i>
                                             21 Comment
-                                        </button>
+                                        </span>
                                     <button class="btn p-0 text-green"><i class="bi bi-share-fill"></i></button>
                                 </div>
                                 <p class="mt-2 mb-0 fs-7">Social engineering is a type of attack used to access organizations, frameworks, networks, or actual areas, or for monetary benefit by utilizing human....
@@ -396,35 +416,19 @@
             <button class="btn btn-navy rounded-pill">Load More</button>
         </section>
 
-        <style>
-            .get-updates {
-                position: relative;
-            }
-            
-            .get-updates input {
-                border-bottom: 4px solid gray;
-                border-radius: 10px;
-            }
-            
-            .get-updates label {
-                padding: 0 10px;
-                position: absolute;
-                top: 8px;
-                right: 16px;
-            }
-        </style>
+
         <!-- get updates form  -->
         <section class="get-updates my-5">
             <div class="row mx-0 align-items-center">
                 <div class="col-md-5">
-                    <h5>Get Updates</h5>
-                    <h6 class="text-secondary">Sign up to receive the latest news</h6>
+                    <h4 class="fw-bold">Get Updates</h4>
+                    <h5 class="text-secondary">Sign up to receive the latest news</h5>
 
                 </div>
                 <div class="col-md-7">
                     <form class="" role="form">
                         <div class="get-updates">
-                            <input type="text" class="form-control py-2" id="inputSuccess4" placeholder="Enter your email address...">
+                            <input type="text" class="form-control" id="inputSuccess4" placeholder="Enter your email address...">
                             <label type="button" class="btn btn-navy rounded-pill">
                                 <i class="bi bi-arrow-right"></i>
                             </label>
