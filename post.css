@@ -1,0 +1,126 @@
+:root {
+    --navy: #182f59;
+}
+
+.text-navy {
+    color: var(--navy);
+}
+
+.bg-navy {
+    background-color: var(--navy);
+}
+
+.btn-navy {
+    background-color: var(--navy);
+    color: white;
+}
+
+.btn-navy:hover {
+    border: 1px solid white;
+    color: white;
+}
+
+.text-green {
+    color: #5bbc2e;
+}
+
+.fs-14p {
+    font-size: 14px;
+}
+
+.fs-7 {
+    font-size: 0.8rem !important;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: var(--navy);
+}
+
+.navbar-nav .nav-link {
+    color: var(--navy) !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .active {
+    border-bottom: 2px solid var(--navy);
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000000 !important;
+}
+
+.banner-1 .banner-bg {
+    color: white;
+    background-image: url(./img/classified_vulnerability.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-gray {
+    background-color: gainsboro;
+}
+
+.accordion-button:focus,
+.form-select:focus,
+.form-control:focus,
+.btn:focus {
+    border-color: black;
+    outline: 0;
+    box-shadow: none;
+    background-color: white;
+    color: black;
+}
+
+.accordion-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion-header {
+    border-bottom: 2px solid gray;
+}
+
+.accordion-body a {
+    text-decoration: none;
+    color: var(--navy);
+    padding: 5px 0;
+}
+
+.banner-1 .menu-link {
+    padding: 5px;
+    background-color: white;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+.tags a {
+    margin-right: 5px;
+    border: 1px solid;
+    border-radius: 50rem;
+    padding: 2px 5px;
+}
+
+.add-to-list button {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 15px;
+    border-radius: 50rem;
+    background-color: #5bbc2e;
+    color: white;
+}
+
+.post-info {
+    margin-top: 2rem;
+    padding: 10px 5px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
