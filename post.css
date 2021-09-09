@@ -102,6 +102,30 @@ a:hover {
     margin-top: 10px;
 }
 
+.post-content {
+    border: 1px solid gray;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.post-content .title {
+    border-bottom: 1px solid gainsboro;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.post-content .content-links .link {
+    /* background-color: gainsboro; */
+    margin-bottom: 5px;
+}
+
+.post-content .content-links .link button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
 .tags a {
     margin-right: 5px;
     border: 1px solid;
@@ -123,4 +147,11 @@ a:hover {
     padding: 10px 5px;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
+}
+
+.subscribe-form .title {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(223, 222, 222);
 }
